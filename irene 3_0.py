@@ -1,11 +1,13 @@
 
 import pandas as pd
-def SerieA():
+def import_seriea():
+    import pandas as pd 
+    
+
     import pandas as pd
     ###########SERIEA###########
     Sea = pd.read_html("https://fbref.com/it/comp/11/Serie-A-Seasons#results2022-2023111_home_away::1")
     for idx,table in enumerate(Sea):
-        
         idx
         table
     SerieA = Sea[0]
@@ -15,11 +17,11 @@ def SerieA():
     #"#############ATALANTA#############"
     Ata = pd.read_html("https://fbref.com/it/squadre/922493f3/Statistiche-Atalanta#matchlogs_for")
     for idx,table in enumerate(Ata):
-        
         idx
         table
     Atalanta = Ata[1]
     Atalanta = Atalanta[Atalanta['Rf'].notna()]
+    Atalanta.to_csv('~/Desktop/irene3.0/Data/SerieA/Atalanta.csv')
 
     print('OK!!')
     #"############BOLOGNA####################"
@@ -31,6 +33,7 @@ def SerieA():
     Bologna = Bol[1]
     Bologna = Bologna[Bologna['Rf'].notna()]
     Bologna
+    Bologna.to_csv('~/Desktop/irene3.0/Data/SerieA/Bologna.csv')
     print('OK!!')
 
     ##############CREMONESE##############
@@ -42,6 +45,7 @@ def SerieA():
     Cremonese = Cre[1]
     Cremonese = Cremonese[Cremonese['Rf'].notna()]
     Cremonese
+    Cremonese.to_csv('~/Desktop/irene3.0/Data/SerieA/Cremonese.csv')
     print('OK!!')
     #############EMPOLI################
     Emp = pd.read_html("https://fbref.com/it/squadre/a3d88bd8/Statistiche-Empoli#matchlogs_for")
@@ -52,6 +56,7 @@ def SerieA():
     Empoli = Emp[1]
     Empoli = Empoli[Empoli['Rf'].notna()]
     Empoli
+    Empoli.to_csv('~/Desktop/irene3.0/Data/SerieA/Empoli.csv')
     print('OK!!')
     ###########Fiorentina###############
     Fio = pd.read_html("https://fbref.com/it/squadre/421387cf/Statistiche-Fiorentina#matchlogs_for")
@@ -62,6 +67,7 @@ def SerieA():
     Fiorentina = Fio[1]
     Fiorentina = Fiorentina[Fiorentina['Rf'].notna()]
     Fiorentina
+    Fiorentina.to_csv('~/Desktop/irene3.0/Data/SerieA/Fiorentina.csv')
     print('OK!!')
     #Hellas Verona ################
 
@@ -73,6 +79,7 @@ def SerieA():
     HellasVerona = Hve[1]
     HellasVerona = HellasVerona[HellasVerona['Rf'].notna()]
     HellasVerona
+    HellasVerona.to_csv('~/Desktop/irene3.0/Data/SerieA/HellasVerona.csv')
     print('OK!!')
 
     #########Inter############
@@ -85,6 +92,7 @@ def SerieA():
     Inter = Int[1]
     Inter = Inter[Inter['Rf'].notna()]
     Inter
+    Inter.to_csv('~/Desktop/irene3.0/Data/SerieA/Inter.csv')
     print('OK!!')
     ########Juventus##########
 
@@ -96,6 +104,7 @@ def SerieA():
     Juve = Juv[1]
     Juve = Juve[Juve['Rf'].notna()]
     Juve
+    Juve.to_csv('~/Desktop/irene3.0/Data/SerieA/Juve.csv')
     print('OK!!')
     ###########Lazio############
     Laz = pd.read_html("https://fbref.com/it/squadre/7213da33/Statistiche-Lazio#matchlogs_for")
@@ -106,6 +115,7 @@ def SerieA():
     Lazio = Laz[1]
     Lazio = Lazio[Lazio['Rf'].notna()]
     Lazio
+    Lazio.to_csv('~/Desktop/irene3.0/Data/SerieA/Lazio.csv')
     print('OK!!')
 
     ##########Lecce#############
@@ -116,6 +126,7 @@ def SerieA():
     Lecce = Lec[1]
     Lecce = Lecce[Lecce['Rf'].notna()]
     Lecce
+    Lecce.to_csv('~/Desktop/irene3.0/Data/SerieA/Lecce.csv')
     print('OK!!')
     ##########Milan#############
     Mil = pd.read_html("https://fbref.com/it/squadre/dc56fe14/Statistiche-Milan#matchlogs_for")
@@ -125,6 +136,7 @@ def SerieA():
     Milan = Mil[1]
     Milan = Milan[Milan['Rf'].notna()]
     Milan
+    Milan.to_csv('~/Desktop/irene3.0/Data/SerieA/Milan.csv')
     print('OK!!')
     ##########Monza#############
     Mon = pd.read_html("https://fbref.com/it/squadre/dc56fe14/Statistiche-Milan#matchlogs_for")
@@ -134,6 +146,7 @@ def SerieA():
     Monza = Mon[1]
     Monza = Monza[Monza['Rf'].notna()]
     Monza
+    Monza.to_csv('~/Desktop/irene3.0/Data/SerieA/Monza.csv')
     print('OK!!')
     #########Napoli################
 
@@ -145,6 +158,7 @@ def SerieA():
     Napoli = Nap[1]
     Napoli = Napoli[Napoli['Rf'].notna()]
     Napoli
+    Napoli.to_csv('~/Desktop/irene3.0/Data/SerieA/Napoli.csv')
     print('OK!!')
     ########Roma##################
     Rom = pd.read_html("https://fbref.com/it/squadre/cf74a709/Statistiche-Roma#matchlogs_for")
@@ -155,6 +169,7 @@ def SerieA():
     Roma = Rom[1]
     Roma = Roma[Roma['Rf'].notna()]
     Roma
+    Roma.to_csv('~/Desktop/irene3.0/Data/SerieA/Roma.csv')
     print('OK!!')
     #########Salernitana############
     Sal = pd.read_html("https://fbref.com/it/squadre/c5577084/Statistiche-Salernitana#stats_standard_11")
@@ -165,6 +180,7 @@ def SerieA():
     Salernitana = Sal[1]
     Salernitana = Salernitana[Salernitana['Rf'].notna()]
     Salernitana
+    Salernitana.to_csv('~/Desktop/irene3.0/Data/SerieA/Salernitana.csv')
     print('OK!!')
     ########Sampdoria############
     Sam = pd.read_html("https://fbref.com/it/squadre/8ff9e3b3/Statistiche-Sampdoria#matchlogs_for")
@@ -175,6 +191,7 @@ def SerieA():
     Sampdoria = Sam[1]
     Sampdoria = Sampdoria[Sampdoria['Rf'].notna()]
     Sampdoria
+    Sampdoria.to_csv('~/Desktop/irene3.0/Data/SerieA/Sampdoria.csv')
     print('OK!!')
     ###########Sassuolo###########
     Sas = pd.read_html("https://fbref.com/it/squadre/e2befd26/Statistiche-Sassuolo#stats_standard_11")
@@ -185,6 +202,7 @@ def SerieA():
     Sassuolo = Sas[1]
     Sassuolo = Sassuolo[Sassuolo['Rf'].notna()]
     Sassuolo
+    Sassuolo.to_csv('~/Desktop/irene3.0/Data/SerieA/Sassuolo.csv')
     print('OK!!')
     ######Spezia############
 
@@ -196,6 +214,7 @@ def SerieA():
     Spezia = Spe[1]
     Spezia = Spezia[Spezia['Rf'].notna()]
     Spezia
+    Spezia.to_csv('~/Desktop/irene3.0/Data/SerieA/Spezia.csv')
     print('OK!!')
     ########Torino#########
     Tor = pd.read_html("https://fbref.com/it/squadre/105360fe/Statistiche-Torino#stats_standard_11")
@@ -206,6 +225,7 @@ def SerieA():
     Torino = Tor[1]
     Torino = Torino[Torino['Rf'].notna()]
     Torino
+    Torino.to_csv('~/Desktop/irene3.0/Data/SerieA/Torino.csv')
     print('OK!!')
 
     #######Udinese##########
@@ -217,10 +237,11 @@ def SerieA():
     Udinese = Udi[1]
     Udinese = Udinese[Udinese['Rf'].notna()]
     Udinese
+    Udinese.to_csv('~/Desktop/irene3.0/Data/SerieA/Udinese.csv')
     print('OK!!')
     return Atalanta ,Bologna, Cremonese, Empoli, Fiorentina, HellasVerona,Inter, Juve, Lazio, Lecce, Milan, Monza, Napoli, Roma, Salernitana, Sampdoria,Sassuolo,Spezia,Torino,Udinese
-
-
+    from datetime import datetime
+    print('Last Upload:  ', datetime.today())
 def PermierLigue():
     import pandas as pd
     #######Arsenal##########
@@ -710,3 +731,61 @@ def freq(data1, data2):
     plt.pie(freq_table['n di esiti'], labels=op , autopct='%1.1f%%')
     plt.title("Esiti Ospiti")
     plt.show()
+
+def analisi(data1, data2):
+    print("""                                                   
+   (            (        (            (            
+   )\      (    )\ )     )\           )\ )     (   
+ (((_)    ))\  (()/(   (((_)    (    (()/(    ))\  
+ )\___   /((_)  /(_))  )\___    )\    ((_))  /((_) 
+((/ __| (_))   (_) _| ((/ __|  ((_)   _| |  (_))   
+ | (__  / -_)   |  _|  | (__  / _ \ / _` |  / -_)  
+  \___| \___|   |_|     \___| \___/ \__,_|  \___|  
+    """)
+    print("""
+
+/$$      /$$           /$$                                            
+| $$  /$ | $$          | $$                                            
+| $$ /$$$| $$  /$$$$$$ | $$  /$$$$$$$  /$$$$$$  /$$$$$$/$$$$   /$$$$$$ 
+| $$/$$ $$ $$ /$$__  $$| $$ /$$_____/ /$$__  $$| $$_  $$_  $$ /$$__  $$
+| $$$$_  $$$$| $$$$$$$$| $$| $$      | $$  \ $$| $$ \ $$ \ $$| $$$$$$$$
+| $$$/ \  $$$| $$_____/| $$| $$      | $$  | $$| $$ | $$ | $$| $$_____/
+| $$/   \  $$|  $$$$$$$| $$|  $$$$$$$|  $$$$$$/| $$ | $$ | $$|  $$$$$$$
+|__/     \__/ \_______/|__/ \_______/ \______/ |__/ |__/ |__/ \_______/
+
+
+.___________. ______   
+|           |/  __  \  
+`---|  |----|  |  |  | 
+    |  |    |  |  |  | 
+    |  |    |  `--'  | 
+    |__|     \______/  
+
+
+
+ __  .______      _______ .__   __.  _______ ____          ___   
+|  | |   _  \    |   ____||  \ |  | |   ____|___ \        / _ \  
+|  | |  |_)  |   |  |__   |   \|  | |  |__    __) |      | | | | 
+|  | |      /    |   __|  |  . `  | |   __|  |__ <       | | | | 
+|  | |  |\  \----|  |____ |  |\   | |  |____ ___) |      | |_| | 
+|__| | _| `._____|_______||__| \__| |_______|____/ ______ \___/  
+                                                  |______|     
+               
+
+    """)
+
+    print('*GRAFICI*')
+    graph_diff(data1, data2)
+    freq(data1, data2)
+    print('*Differenza della mediana statistica tra reti fatte e reti subite')
+    unopuntozero(data1, data2)
+    print('*Probabilità del numero di gol *')
+    print(irene2(data1, data2))
+
+from time import sleep
+from tqdm import tqdm
+
+print("data update:!")
+Sq_casa = input("Squadra in casa: ")
+Sq_away = input("Squadra furoicasa: ")
+analisi(Sq_casa, Sq_away)
